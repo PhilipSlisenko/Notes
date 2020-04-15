@@ -1,0 +1,1 @@
+How to read config file if it is in some package and you cannot use path?

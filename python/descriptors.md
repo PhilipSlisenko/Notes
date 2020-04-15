@@ -1,0 +1,4 @@
+If an object defines `__set__()` or `__delete__()`, it is considered a **data** descriptor. Descriptors that only define `__get__()` are called **non-data** descriptors (they are typically used for methods but other uses are possible).  
+**Attribute syntax** = dot notation  
+Classes are constructed using `type` by default. Class body is executed in new namespace and class name is bound locally to the result of the function type. Type takes three arguments name, bases, namespace dict. Name becomes dunder name attribute of the class.  
+`vars()` built in returns `__dict__` of a module, class, instance, or any other object. `vars()` acts like `locals()` method when an empty argument is passed.
