@@ -38,4 +38,6 @@ docker-compose logs (-f  follow)
 6. Build & Run
 ```
   - The .env file, is only used during a pre-processing step when working with docker-compose.yml files. Dollar-notation variables like $HI are substituted for values contained in an “.env” named file in the same directory. When working with an .env file, you can debug your docker-compose.yml files quite easily. Just type `docker-compose config`.  
-  https://vsupalov.com/docker-arg-env-variable-guide/
+  https://vsupalov.com/docker-arg-env-variable-guide/      
+
+Docker-compose.yaml describes desired state of your app. And there is actual state of your running app. If you change compose file and run `docker-compose up -d` it will check the difference and recreate running instances to match compose file.
