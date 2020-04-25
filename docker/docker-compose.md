@@ -1,9 +1,9 @@
 ``` yaml
 services:
   app:
-    build: path/to/dockerfile
-    image: name-of-image
-    environtment:
+    build: path/to/build_contxt (by default Docker file is there)
+    image: how-to-name-image
+    environtment: # Variables that will be available inside container
       VAR_NAME: value
     expose:
       - 3000 # to connect from other containers in docker-compose. Does not get mapped to host port.
