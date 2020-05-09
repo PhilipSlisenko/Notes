@@ -43,3 +43,4 @@ Docker-compose.yaml describes desired state of your app. And there is actual sta
   - The .env file, is only used during a pre-processing step when working with docker-compose.yml files. Dollar-notation variables like $HI are substituted for values contained in an “.env” named file in the same directory. When working with an .env file, you can debug your docker-compose.yml files quite easily. Just type `docker-compose config`.  
   https://vsupalov.com/docker-arg-env-variable-guide/      
 
+You can use docker-compose.override.yaml to override docker-compose contents for example for development. "Extend services in Compose" section in docker docs
