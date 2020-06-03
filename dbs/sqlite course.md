@@ -67,8 +67,22 @@ You need a cursor object to fetch results. If you tried to do a SELECT without a
 Cursor objects allow you to keep track of which result set is which, since it's possible to run multiple queries before you're done fetching the results of the first.  
 It gives us the ability to have multiple separate working environments through the same connection to the database.  
 
-
-so maybe cursor is like a staging area
-
+Cursor per operation.  
+So maybe cursor is like a staging area
+___
+# Update, Delete, Drop
+```python 
+c.execute("""UPDATE ...""")
+c.execute("""DELETE ...""")
+c.execute("""DROP TABLE ...""")
+conn.commit()
+```
+___
+# D
+```python 
+c.execute("""UPDATE ...""")
+c.execute("""DELETE ...""")
+conn.commit()
+```
 ## Workflow
 create tables -> insert data -> query data
