@@ -17,7 +17,10 @@ So the takeaway:
 - `setup.py` should declare the loosest possible dependency versions that are still workable.  Its job is to say what a particular package can work with.
 - `requirements.txt` is a deployment manifest that defines an entire installation job, and shouldn't be thought of as tied to any one package.  Its job is to declare an exhaustive list of all the necessary packages to make a deployment work.
 - Because these two things have such different content and reasons for existing, it's not feasible to simply copy one into the other.  
-https://stackoverflow.com/a/33685899/8949999
+https://stackoverflow.com/a/33685899/8949999  
+___
+### zip_safe
+Set `true` if package casn be a zip archive. 
 ___
 
 ## Articles
