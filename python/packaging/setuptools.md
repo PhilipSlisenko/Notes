@@ -22,6 +22,9 @@ ___
 ### zip_safe
 Set `true` if package casn be a zip archive. 
 ___
+### Namespace Packages
+Useful when you have a big project/package and you want subpackages to be distributions on their own. When project grows you can factor out subpackages into separate distributions but it will remain under one big virtual namespace package. When you declare a package to be a namespace package, it means that it is merely a container for modules and subpackages. 
+___
 
 ## Articles
 Overview in russian: https://codecamp.ru/documentation/python/1381/creating-python-packages  
