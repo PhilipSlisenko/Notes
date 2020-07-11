@@ -14,3 +14,11 @@ The chmod man page says:
 The format of a symbolic mode is [ugoa...][[+-=][rwxXstugo...]...][,...]. Multiple symbolic operations can be given, separated by commas.
 
 A combination of the letters 'ugoa' controls which users' access to the file will be changed: the user who owns it (u), other users in the file's group (g), other users not in the file's group (o), or all users (a). If none of these are given, the effect is as if 'a' were given, but bits that are set in the umask are not affected.
+
+```
+$ ls -ld some_dir
+drwxrwxr-x 2 alex consult 4096 Feb 20 10:10 some_dir/
+              ^     ^
+              |     |_____ directory's group
+              |___________ directory's owner
+```
